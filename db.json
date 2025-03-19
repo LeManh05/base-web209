@@ -1,0 +1,70 @@
+{
+  "weddingCards": [
+    {
+      "id":1,
+      "name": "Thiệp cưới Hiện Đại",
+      "price": 15000,
+      "category": "Hiện đại",
+      "thumbnail": "https://inthienhang.com/wp-content/uploads/thiep-cuoi.jpg.webp",
+      "description":"Thiệp cưới mang phong cách cổ điển với tông màu xanh đậm chủ đạo, kết hợp hoa văn in nổi sắc nét. Phần phong bì được trang trí hoa văn tinh tế bên trong, tạo sự đồng bộ và sang trọng. Nội dung thiệp được in rõ ràng, dễ đọc, phù hợp cho các sự kiện cưới hỏi cao cấp."
+    },
+    {
+      "id":2,
+      "name": "Thiệp cưới Cổ Điển",
+      "price": 20000,
+      "category": "Cổ điển",
+      "thumbnail": "https://thiepcuoisala.vn/uploads/source/mau-p-4-so-khong-ep-kim-1/p1048-min.jpg",
+      "description":"Sản phẩm thiệp cưới bạn đang xem là một bộ thiệp cưới sang trọng và tinh tế, được thiết kế với tông màu hồng pastel nhã nhặn, mang lại cảm giác lãng mạn và thanh lịch. Bộ thiệp bao gồm các phần chính như thiệp mời, thiệp nhỏ thông báo ngày cưới, và bao thư." 
+    },
+    {
+      "id":3,
+      "name": "Thiệp cưới Sang Trọng",
+      "price": 30000,
+      "category": "Sang trọng",
+      "thumbnail": "https://thiepcuoi88.com/wp-content/uploads/2020/06/chi-tiet-bb41.jpg",
+      "description":"Thiệp cưới này có thiết kế dạng gập, với hình ảnh cặp đôi cô dâu chú rể được in ở phần trên. Hoa văn hoa mẫu đơn màu tím nổi bật ở hai bên tạo điểm nhấn lãng mạn và sang trọng. Thông tin lễ cưới được sắp xếp gọn gàng, rõ ràng với font chữ mềm mại, dễ đọc. Tổng thể thiệp mang phong cách cổ điển và tinh tế, phù hợp cho những buổi lễ cưới trang trọng."
+    },
+    {
+      "id":4,
+      "name": "Thiệp cưới lãng mạn",
+      "price": 12000,
+      "category": "Hiện đại",
+      "thumbnail": "https://inbacha.com/wp-content/uploads/2021/05/thiep-cuoi-hoang-ga.jpg",
+      "description":"Thiệp cưới thiết kế theo phong cách sang trọng với tông màu xanh đậm kết hợp hoa văn vàng ánh kim tinh tế. Bên ngoài được thắt nơ ruy băng xanh nhạt, tạo điểm nhấn trang nhã. Nội dung thiệp được trình bày rõ ràng, lịch sự, phù hợp cho các dịp lễ cưới trọng đại." 
+    },
+    {
+      "id":5,
+      "name": "Thiệp cưới Tình Yêu",
+      "price": 18000,
+      "category": "Hiện đại",
+      "thumbnail": "https://thiepcuoigau.vn/wp-content/uploads/2017/09/thiep-cuoi-don-gian.jpg",
+      "description":"Thiệp cưới này có thiết kế sang trọng với tông màu trắng chủ đạo, điểm nhấn là họa tiết hoa văn tinh tế và tên cô dâu chú rể in nổi bật màu vàng ánh kim. Phong cách thiệp thanh lịch và truyền thống, phù hợp với các buổi tiệc cưới trang trọng. Bộ thiệp bao gồm phong bì, thiệp mời chính và thiệp thông tin bữa tiệc, tất cả được thiết kế hài hòa và trang nhã."
+    },
+    {
+      "id":6,
+      "name": "Thiệp cưới Hạnh Phúc",
+      "price": 22000,
+      "category": "Tối giản",
+      "thumbnail": "https://www.anhieuwedding.com/wp-content/uploads/2020/07/AHD2020-43.6-copy.jpg",
+      "description":"Thiệp cưới này có tông màu hồng nhạt nhẹ nhàng, kết hợp cùng chiếc nơ trắng tinh tế ở mặt ngoài. Bên trong, thông tin lễ cưới được in trên nền màu pastel với họa tiết vân ánh kim ở góc, tạo cảm giác sang trọng và hiện đại. Tổng thể thiệp mang phong cách tinh tế, thanh lịch, phù hợp cho những buổi tiệc cưới trang trọng và ấm cúng." 
+    },
+    {
+      "id":7,
+      "name": "Thiệp cưới truyền thống",
+      "price": 15000,
+      "category": "Tối giản",
+      "thumbnail": "https://www.anhieuwedding.com/wp-content/uploads/2020/08/AHD2020-056.3-copy.jpg",
+      "description":"Thiệp cưới này có thiết kế tinh tế với tông màu xanh lá cây nhẹ nhàng, kết hợp với họa tiết lá cây đơn giản nhưng trang nhã. Phong cách thiệp mang hơi hướng tự nhiên và hiện đại, với phần chữ viết tay tạo cảm giác thân thiện và gần gũi. Bộ thiệp bao gồm phong bì, thiệp mời và thẻ cảm ơn, tất cả đều được thiết kế đồng bộ và hài hòa." 
+    },
+    {
+      "id":8,
+      "name": "Thiệp cưới vẽ tay",
+      "price": 12000,
+      "category": "Tối giản",
+      "thumbnail": "https://thiepcuoihp.com/uploads/source/thiepcuoi/thiep-cuoi-hp-mau-hong.jpg",
+      "description":"Đây là mẫu thiệp cưới mã PQ-031, với tông màu hồng nhạt, họa tiết hoa hồng lãng mạn. Thiết kế thanh lịch, tinh tế với thông tin lễ cưới in rõ ràng, nổi bật." 
+    }
+    
+
+  ]
+}
