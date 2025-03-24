@@ -48,8 +48,8 @@ const WeddingCardDetail = () => {
 
   return (
     <div>
-      <Header />
-      <div className="flex items-center justify-center bg-gray-100 my-12 mx-12">
+      <Header />  
+      <div className="flex items-center justify-center bg-white-100 my-12 mx-12">
         <div className="container mx-auto p-8 bg-white rounded-lg flex flex-col items-center lg:flex-row">
           {/* Image section */}
           <div className="lg:w-1/2 w-full mb-8 lg:mb-0 lg:mr-10">
@@ -57,6 +57,7 @@ const WeddingCardDetail = () => {
               src={weddingCards.thumbnail}
               alt={weddingCards.name}
               className="w-full h-full object-cover rounded-lg shadow-md"
+              loading="lazy"
             />
           </div>
 

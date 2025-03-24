@@ -24,7 +24,7 @@ const FavoritesPage = () => {
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {favorites.length === 0 ? (
-            <p className="text-center">
+            <p className="text-center text-red-500">
               Không có mẫu thiệp nào trong danh sách yêu thích.
             </p>
           ) : (
@@ -37,6 +37,7 @@ const FavoritesPage = () => {
                   src={item.thumbnail}
                   alt={item.name}
                   className="w-full h-48 object-cover rounded-md"
+                  loading="lazy"
                 />
                 <div className="p-4">
                   <h2 className="text-xl font-semibold text-center ">

@@ -6,13 +6,17 @@ import { Search } from "lucide-react";
 import Slideshow from "../components/banner";
 import Footer from "../components/footer";
 
-function WeddingList() {
+function WeddingList(){
   const [weddingCards, setWeddingCards] = useState([]);
   const [search, setSearch] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("");
   const [sortOrder, setSortOrder] = useState("asc");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  // Pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const cardsPerPage = 4;
 
   useEffect(() => {
     const fetchWeddingCards = async () => {
@@ -39,6 +43,24 @@ function WeddingList() {
       sortOrder === "asc" ? a.price - b.price : b.price - a.price
     );
 
+  // Pagination logic
+  const indexOfLastCard = currentPage * cardsPerPage;
+  const indexOfFirstCard = indexOfLastCard - cardsPerPage;
+  const currentCards = filteredCards.slice(indexOfFirstCard, indexOfLastCard);
+  const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
   if (loading) return <p>Đang tải...</p>;
   if (error) return <p>{error}</p>;
 
@@ -47,7 +69,7 @@ function WeddingList() {
       <Header />
       <Slideshow />
       <div className="px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center mt-12 space-y-4 md:space-y-0">
+        <div className="flex flex-col md:flex-row justify-between items-center mt-12 space-y-4 md:space-y-0 px-4">
           {/* Search Bar */}
           <div className="relative w-full md:w-auto flex items-center">
             <input
@@ -93,19 +115,36 @@ function WeddingList() {
           <span className="text-gray-400  mx-4">✕</span>
         </div>
 
-        <Card weddingCards={filteredCards} />
+        <Card weddingCards={currentCards} />
+
+        {/* Pagination Controls */}
+        <div className="flex justify-center mt-8">
+          <button
+            onClick={handlePrevPage}
+            disabled={currentPage === 1}
+            className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 disabled:opacity-50"
+          >
+            Trang trước
+          </button>
+          <span className="mx-4 my-auto text-lg">
+            {currentPage} / {totalPages}
+          </span>
+          <button
+            onClick={handleNextPage}
+            disabled={currentPage === totalPages}
+            className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 disabled:opacity-50"
+          >
+            Trang sau
+          </button>
+        </div>
       </div>
 
-      <div className="flex items-center justify-center mb-8">
-        <button class="px-16 py-2 mt-8 border border-gray-300 text-red-500 font-bold uppercase bg-white hover:bg-black hover:text-white transition duration-300">
-          Xem tất cả
-        </button>
-      </div>
       <div className="my-32">
         <img
           src="/images/banner.png"
           alt="Banner"
           className="w-full h-auto rounded-lg shadow-md"
+          loading="lazy"
         />
       </div>
 

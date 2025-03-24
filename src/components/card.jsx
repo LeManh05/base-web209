@@ -14,6 +14,7 @@ const Card = ({ weddingCards }) => {
               src={item.thumbnail}
               alt={item.name}
               className="w-full h-48 object-cover rounded-md mb-4"
+              loading="lazy"
             />
             <h2 className="text-xl font-semibold text-gray-600">{item.name}</h2>
             <p className="text-gray-500">
@@ -28,7 +29,7 @@ const Card = ({ weddingCards }) => {
           </div>
         ))
       ) : (
-        <p>Không có thiệp cưới nào phù hợp</p>
+        <p className="text-red-500">Không có thiệp cưới nào phù hợp</p>
       )}
     </div>
   );

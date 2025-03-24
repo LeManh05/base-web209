@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 py-10">
+    <footer className="bg-gray-200 py-10">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-4">
         {/* Logo section */}
         <div className="space-y-4">
@@ -12,13 +12,16 @@ const Footer = () => {
               src="/images/logo1.png"
               alt="The Gioi In An"
               className="w-16 h-16"
+              loading="lazy"
             />
             <img
               src="/images/logo2.png"
               alt="Cafe Simple"
               className="w-16 h-16"
+              loading="lazy"
             />
-            <img src="/images/logo3.png" alt="Pixefy" className="w-16 h-16" />
+            <img src="/images/logo3.png" alt="Pixefy" className="w-16 h-16"
+            loading="lazy"/>
           </div>
           <p className="text-gray-500">
             CTY TNHH MTV THẾ GIỚI IN ẤN
@@ -119,7 +122,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <hr className="border-t-1 border-gray-200 mt-10" />
+      <hr className="border-t border-gray-400 mt-10 mx-4" />
 
       <div className="py-4 mt-10">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
